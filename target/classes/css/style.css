@@ -1,0 +1,88 @@
+/* General styling for VBox and HBox */
+VBox, HBox {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+HBox {
+    -fx-alignment: center;
+}
+
+VBox {
+    -fx-alignment: top-center;
+}
+
+/* Styling for labels */
+.top-box {
+    -fx-background-color: #aae7ff;
+    -fx-alignment: left;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+/* Styling for the time label */
+#newsTime {
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+/* Top bar styling */
+#newsCountLabel, #newsIndexLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 12px; /* Smaller text size */
+    -fx-text-fill: #000000;
+}
+.top_label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+    -fx-padding: -10px;
+}
+/* Styling for buttons */
+.button {
+    -fx-background-color: #3f51b5;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #303f9f;
+}
+
+.button:pressed {
+    -fx-background-color: #1a237e;
+}
+
+/* Styling for ImageView */
+.image-view {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 10,0.5,0.0,0.0 );
+}
+
+/* Styling for Hyperlink */
+.hyperlink {
+    -fx-text-fill: #3f51b5;
+    -fx-font-size: 14px;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #303f9f;
+}
+
+/* Styling for the headline label */
+#newsHeadline {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Styling for the description label */
+#newsDescription {
+    -fx-font-size: 14px;
+}
+
+/* Styling for the time label */
+#newsTime {
+    -fx-font-size: 12px;
+    -fx-text-fill: gray;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nc1_test_task.controllers.NewsArticleController" stylesheets="@../css/style.css">
+    <HBox fx:id="topBox" styleClass="top-box">
+        <VBox>
+            <VBox style="-fx-padding: -5">
+                <Label text="Current News: " styleClass="top_label"/>
+                <Label fx:id="newsIndexLabel" text="0/0" styleClass="top_label"/>
+            </VBox>
+        </VBox>
+    </HBox>
+    <HBox spacing="10.0">
+        <!-- Left side with image and time -->
+        <VBox spacing="10.0">
+            <ImageView fx:id="newsImage" fitWidth="250" preserveRatio="true"/>
+            <Label fx:id="newsTime" />
+        </VBox>
+
+        <!-- Right side with headline, description, and link -->
+        <VBox spacing="10.0">
+            <Label fx:id="newsHeadline" style="-fx-font-size: 18px; -fx-font-weight: bold;" wrapText="true"/>
+            <Label fx:id="newsDescription" wrapText="true" />
+            <Hyperlink fx:id="newsLink" />
+        </VBox>
+    </HBox>
+    <HBox spacing="10.0" alignment="center">
+        <Button text="◀" onAction="#handlePreviousNews" style="-fx-min-width: 200"/>
+        <Button text="▶" onAction="#handleNextNews" style="-fx-min-width: 200" />
+    </HBox>
+</VBox>

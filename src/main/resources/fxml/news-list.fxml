@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ListCell?>
+<?import javax.security.auth.callback.Callback?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.nc1_test_task.controllers.NewsListController" stylesheets="@../css/style.css">
+    <HBox fx:id="topBox" styleClass="top-box">
+        <VBox>
+            <VBox style="-fx-padding: -5">
+                <Label text="Total News for: " styleClass="top_label"/>
+                <Label fx:id="newsCountLabel" text="0" styleClass="top_label"/>
+            </VBox>
+        </VBox>
+        <Button text="All News" onAction="#filterAllNews" styleClass="button"/>
+        <Button  text="Morning (5-12)" onAction="#filterMorningNews" styleClass="button"/>
+        <Button text="Afternoon (12-18)" onAction="#filterDayNews" styleClass="button"/>
+        <Button text="Evening (18-24)" onAction="#filterEveningNews" styleClass="button"/>
+    </HBox>
+
+    <ListView fx:id="newsListView" />
+</VBox>
